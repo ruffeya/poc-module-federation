@@ -31,6 +31,14 @@ module.exports = {
       remotes: {
         Remote: 'Remote@http://localhost:8081/remoteEntry.js',
       },
+      shared: {
+        react: { singleton: true, eager: true, requiredVersion: '19.x' },
+        "react-dom": { singleton: true, eager: true, requiredVersion: '19.x' },
+        "@mui/material": { singleton: true, eager: true },
+        "@mui/system": { singleton: true, eager: true },
+        "@emotion/react": { singleton: true, eager: true },
+        "@emotion/styled": { singleton: true, eager: true },
+      },
     }),
   ],
 };

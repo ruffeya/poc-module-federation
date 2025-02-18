@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import Button from './Button';
-import ActionsList from './ActionList';
+import ActionsList from './ActionsList';
 
 
 const domNode = document.getElementById('root');

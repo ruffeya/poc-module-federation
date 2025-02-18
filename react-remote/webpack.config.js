@@ -30,7 +30,16 @@ module.exports = {
       name: 'Remote',
       filename: 'remoteEntry.js',
       exposes: {
-        './Button': './src/Button.tsx', // Expose the Button component
+        './Button': './src/Button.tsx',
+        './ActionsList': './src/ActionsList.tsx',
+      },
+      shared: {
+        react: { singleton: true, eager: true, requiredVersion: '19.x' },
+        "react-dom": { singleton: true, eager: true, requiredVersion: '19.x' },
+        "@mui/material": { singleton: true, eager: true },
+        "@mui/system": { singleton: true, eager: true },
+        "@emotion/react": { singleton: true, eager: true },
+        "@emotion/styled": { singleton: true, eager: true },
       },
     }),
   ],
