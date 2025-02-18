@@ -3,8 +3,10 @@ import Grid from '@mui/material/Grid2';
 
 import ActionsList from 'Remote/ActionsList';
 import ActionsForm from 'Remote/ActionsForm';
-import { ActionType } from 'Remote/actionTypes';
 
+type ActionType = {
+  formName: string;
+};
 
 const ActionsDashboard: React.FC = () => {
   const [selectedAction, setSelectedAction] = useState<ActionType | null>(null);
