@@ -12,7 +12,7 @@ const ActionsDashboard: React.FC = () => {
   const [selectedAction, setSelectedAction] = useState<ActionType | null>(null);
 
   return (
-    <Grid container>
+    <Grid container spacing={2}>
       <Grid size={3}>
         <ActionsList onClick={(value) => setSelectedAction(value)} />
       </Grid>

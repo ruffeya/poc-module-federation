@@ -5,7 +5,7 @@ import { FormType } from '../../types/actionTypes';
 
 
 interface ActionFormProps {
-  formName: FormType;
+  formName: FormType; 
 }
 
 const ActionsForm: React.FC<ActionFormProps> = ({ formName }) => {
