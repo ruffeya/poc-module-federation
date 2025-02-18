@@ -1,6 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { Container, CssBaseline } from '@mui/material';
+import { Container, CssBaseline, Typography } from '@mui/material';
+import Grid from '@mui/material/Grid2';
 
 import ActionsList from 'Remote/ActionsList';
 
@@ -8,7 +9,19 @@ const App = () => (
   <React.Fragment>
     <CssBaseline />
     <Container maxWidth="lg">
-      <ActionsList />
+      <Grid size={12}>
+      <Typography variant="h4" component="h5">
+        Plan your home routine
+      </Typography>
+      </Grid>
+      <Grid container >
+        <Grid size={3}>
+          <ActionsList />
+        </Grid>
+        <Grid size={9}>
+          Content
+        </Grid>
+      </Grid>
     </Container>
   </React.Fragment>
 );
