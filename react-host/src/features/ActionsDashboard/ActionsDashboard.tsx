@@ -3,18 +3,18 @@ import Grid from '@mui/material/Grid2';
 
 import ActionsList from 'Remote/ActionsList';
 import ActionsForm from 'Remote/ActionsForm';
+import { ActionType } from 'Remote/actionTypes';
 
 
 const ActionsDashboard: React.FC = () => {
-  const [selectedAction, setSelectedAction] = useState(null);
+  const [selectedAction, setSelectedAction] = useState<ActionType | null>(null);
 
-  console.log(selectedAction)
   return (
     <Grid container>
-      <Grid item size={3}>
+      <Grid size={3}>
         <ActionsList onClick={(value) => setSelectedAction(value)} />
       </Grid>
-      <Grid item size={9}>
+      <Grid size={9}>
         <ActionsForm formName={selectedAction?.formName}/>
       </Grid>
     </Grid>

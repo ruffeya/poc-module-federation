@@ -1,7 +1,7 @@
 import React from 'react';
 import CleanFridge from './CleanTheFridge';
 import ErrorForm from './ErrorForm';
-import { FormType } from '../../types/actions';
+import { FormType } from '../../types/actionTypes';
 
 
 interface ActionFormProps {

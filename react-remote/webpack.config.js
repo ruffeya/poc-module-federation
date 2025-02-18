@@ -32,6 +32,7 @@ module.exports = {
       exposes: {
         './ActionsForm': './src/ActionsForm/index.tsx',
         './ActionsList': './src/ActionsList.tsx',
+        './actionTypes': './src/types/actionTypes.ts'
       },
       shared: {
         react: { singleton: true, eager: true, requiredVersion: '19.x' },

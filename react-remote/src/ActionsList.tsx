@@ -2,7 +2,7 @@ import React from 'react';
 import { List, ListItem, ListItemText } from '@mui/material';
 
 import actions from '../const/actions';
-import { ActionType } from '../types/actions';
+import { ActionType } from '../types/actionTypes';
 
 
 interface ActionsListProps {

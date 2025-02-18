@@ -1,4 +1,4 @@
-import { ActionType } from '../types/actions';
+import { ActionType } from '../types/actionTypes';
 
 const actions: ActionType[] = [{
   id: 1,
