@@ -5,12 +5,14 @@ import ActionsList from './ActionList';
 
 
 const domNode = document.getElementById('root');
-const root = createRoot(domNode);
-
-
-root.render(
-  <React.StrictMode>
-    <Button />
-    <ActionsList />
-  </React.StrictMode>
-);
+if (domNode) {
+  const root = createRoot(domNode);
+  root.render(
+    <React.StrictMode>
+      <Button />
+      <ActionsList />
+    </React.StrictMode>
+  );
+} else {
+  console.error('Root element not found');
+}
