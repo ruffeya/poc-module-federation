@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { Container, CssBaseline, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 
-import ActionsList from 'Remote/ActionsList';
+import ActionsDashboard from './features/ActionsDashboard/ActionsDashboard';
 
 const App = () => (
   <React.Fragment>
@@ -14,14 +14,7 @@ const App = () => (
         Plan your home routine
       </Typography>
       </Grid>
-      <Grid container >
-        <Grid size={3}>
-          <ActionsList />
-        </Grid>
-        <Grid size={9}>
-          Content
-        </Grid>
-      </Grid>
+      <ActionsDashboard />
     </Container>
   </React.Fragment>
 );

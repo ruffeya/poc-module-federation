@@ -2,6 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import Button from './Button';
 import ActionsList from './ActionsList';
+import ActionForm from './ActionsForm';
 
 
 const domNode = document.getElementById('root');
@@ -11,6 +12,7 @@ if (domNode) {
     <React.StrictMode>
       <Button />
       <ActionsList />
+      <ActionForm formName="CleanTheFridge"/>
     </React.StrictMode>
   );
 } else {
