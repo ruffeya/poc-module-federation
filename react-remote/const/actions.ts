@@ -1,4 +1,6 @@
-const actions = [{
+import { Action } from '../types/actions';
+
+const actions: Action[] = [{
   name: 'Clean the Fridge',
   description: 'Remove old and expired items, ' +
     'wipe down the interior with a mild cleaner, and organize ' +

@@ -2,20 +2,20 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { ModuleFederationPlugin } = require('webpack').container;
 
 module.exports = {
-  entry: './src/index.jsx',
+  entry: './src/index.tsx',
   mode: 'development',
   devServer: {
     port: 8081,
   },
+  resolve: {
+    extensions: ['.js', '.jsx', '.json', '.ts', '.tsx']
+  },
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.tsx?$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
-        options: {
-          presets: ['@babel/preset-env', '@babel/preset-react']
-        }
       },
     ],
   },
@@ -27,7 +27,7 @@ module.exports = {
       name: 'Remote',
       filename: 'remoteEntry.js',
       exposes: {
-        './Button': './src/Button.jsx', // Expose the Button component
+        './Button': './src/Button.tsx', // Expose the Button component
       },
     }),
   ],
