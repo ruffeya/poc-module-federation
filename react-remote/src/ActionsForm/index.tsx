@@ -5,11 +5,11 @@ import { FormType } from '../../types/actionTypes';
 
 
 interface ActionFormProps {
-  formName: FormType; 
+  formType: FormType; 
 }
 
-const ActionsForm: React.FC<ActionFormProps> = ({ formName }) => {
-  if (formName === 'CleanTheFridge') {
+const ActionsForm: React.FC<ActionFormProps> = ({ formType }) => {
+  if (formType === 'CleanTheFridge') {
     return <CleanFridge />
   }
   return <ErrorForm />

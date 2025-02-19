@@ -13,5 +13,5 @@ export type ActionType = {
   id: number;
   name: string;
   description: string;
-  formName: FormType;
+  formType: FormType;
 };

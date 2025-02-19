@@ -17,7 +17,6 @@ const ActionsList: React.FC<ActionsListProps> = ({ onClick }) => (
         alignItems="flex-start" 
         key={action.id} 
         onClick={() => {
-          console.log(`Action clicked: ${action.name}`);
           if (onClick) onClick(action);
         }}
       >

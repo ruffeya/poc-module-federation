@@ -12,7 +12,7 @@ if (domNode) {
     <React.StrictMode>
       <Button />
       <ActionsList />
-      <ActionForm formName="CleanTheFridge"/>
+      <ActionForm formType="CleanTheFridge"/>
     </React.StrictMode>
   );
 } else {
